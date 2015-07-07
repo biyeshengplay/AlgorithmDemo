@@ -1,5 +1,7 @@
 package com;
 
+import java.util.Arrays;
+
 public class BubbleSort {
 
     public static void main(String[] args) {
@@ -7,10 +9,13 @@ public class BubbleSort {
         int[] arrayb = new int[] { 5, 56, 45, 46, 14, 755, 15, 87, 71, 594 };
         int[] arrayc = new int[] { 5, 56, 45, 46, 14, 755, 15, 87, 71, 594 };
         int[] arrayd = new int[] { 5, 56, 45, 46, 14, 755, 15, 87, 71, 594 };
+        int[] arraye = new int[] { 5, 56, 45, 46, 14, 755, 15, 87, 71, 594, 4,
+                57, 22, 58, 65, 78, 145, 4145 };
         bubbleSorta(arraya);
         bubbleSortb(arrayb);
         bubbleSortc(arrayc);
         bubbleSortd(arrayd);
+        cocktailSort(arraye);
     }
 
     public static void mPrintln(int[] a) {
@@ -73,5 +78,27 @@ public class BubbleSort {
             }
         }
         mPrintln(a);
+    }
+
+    public static void cocktailSort(int[] src) {
+        for (int i = 0; i < src.length / 2; i++) {
+            // 将最小值排到队尾
+            for (int j = i; j < src.length - i - 1; j++) {
+                if (src[j] < src[j + 1]) {
+                    int temp = src[j];
+                    src[j] = src[j + 1];
+                    src[j + 1] = temp;
+                }
+            }
+            // 将最大值排到队头
+            for (int j = src.length - 1 - (i + 1); j > i; j--) {
+                if (src[j] > src[j - 1]) {
+                    int temp = src[j];
+                    src[j] = src[j - 1];
+                    src[j - 1] = temp;
+                }
+            }
+        }
+        mPrintln(src);
     }
 }
