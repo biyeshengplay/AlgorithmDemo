@@ -3,14 +3,10 @@ package com;
 public class BubbleSort {
 
     public static void main(String[] args) {
-        int[] arraya = new int[] { 5, 56, 45, 46, 14, 755, 15, 87, 71, 594, 1,
-                47, 564, 22, 41 };
-        int[] arrayb = new int[] { 5, 56, 45, 46, 14, 755, 15, 87, 71, 594, 1,
-                47, 564, 22, 41 };
-        int[] arrayc = new int[] { 5, 56, 45, 46, 14, 755, 15, 87, 71, 594, 1,
-                47, 564, 22, 41 };
-        int[] arrayd = new int[] { 5, 56, 45, 46, 14, 755, 15, 87, 71, 594, 1,
-                47, 564, 22, 41 };
+        int[] arraya = new int[] { 5, 56, 45, 46, 14, 755, 15, 87, 71, 594 };
+        int[] arrayb = new int[] { 5, 56, 45, 46, 14, 755, 15, 87, 71, 594 };
+        int[] arrayc = new int[] { 5, 56, 45, 46, 14, 755, 15, 87, 71, 594 };
+        int[] arrayd = new int[] { 5, 56, 45, 46, 14, 755, 15, 87, 71, 594 };
         bubbleSorta(arraya);
         bubbleSortb(arrayb);
         bubbleSortc(arrayc);
