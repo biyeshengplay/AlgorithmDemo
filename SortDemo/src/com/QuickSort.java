@@ -30,9 +30,9 @@ public class QuickSort {
 
     public static void mPrintln(int[] a) {
         for (int i = 0; i < a.length; i++) {
-            System.out.println(a[i]);
+            System.out.print(a[i] + " ");
         }
-        System.out.println("==========================");
+        System.out.println("||");
     }
 
     public static void quickSorta(int[] arr, int left, int right) // 这里只需要数组第一和最后一个下标.
