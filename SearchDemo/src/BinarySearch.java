@@ -33,13 +33,20 @@ public class BinarySearch {
         int[] nums = { 2, 5, 11, 3, 22, 6, 91, 13, 35, 4 };
         // 对数组进行排序
         QuickSort.quickSort(nums, 0, nums.length - 1);
-
+        mPrintln(nums);
         int find = BinarySearch.search(nums, 5);
 
         if (find != -1) {
             System.out.println("找到数值于索引" + find);
         } else {
             System.out.println("找不到数值");
+        }
+    }
+
+    public static void mPrintln(int[] a) {
+        System.out.println("对数组进行排序：");
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
         }
     }
 
